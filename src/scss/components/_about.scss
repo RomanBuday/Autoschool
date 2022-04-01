@@ -1,0 +1,110 @@
+.about {
+  padding: 40px 0;
+  background-color: #E5E5E5;
+  .container {
+    display: flex;
+    color: --main-color;
+  }
+  &__left {
+    width: 50%;
+    &_menu-wrapper {
+      display: flex;
+    }
+  }
+  &__header {
+    margin: 0;
+    color: #c4c4c4;
+    margin-right: 5px;
+  }
+  &__menu_item {
+    color: #2d2d2d;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  &__content {
+    padding: 20px 40px 40px 0;
+    &_header {
+      font-size: 36px;
+      font-weight: 700;
+    }
+    &_text {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+  }
+  &__btn {
+    margin-bottom: 40px;
+  }
+  &__right {
+    position: relative;
+    &_icon {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 18px;
+      padding: 5px;
+      padding-right: 20px;
+    }
+  }
+  &__ico {
+    display: inherit;
+  }
+  &__descr {
+    color: #181818;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+  }
+  &__star1-icon {
+    position: absolute;
+    top: 70px;
+    right:130px;
+  }
+  &__star2-icon {
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+  }
+}
+
+.clock-icon {
+  bottom: 205px;
+  right: 54px;
+}
+
+.flash-icon {
+  top: 230px;
+  left: 20px;
+}
+
+.book-icon {
+  bottom: 130px;
+  left: 50px;
+}
+
+.button {
+  width: 213px;
+  background-color: #FF941F;
+  color: #fff;
+  height: 55px;
+  border-radius: 16px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 768px){
+  .about {
+    .container {
+      flex-direction: column;
+    }
+    &__left {
+      width: 100%;
+    }
+    &__content {
+      padding: 0;
+    }
+  }
+}
