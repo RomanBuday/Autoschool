@@ -1,0 +1,165 @@
+.study {
+  background: #E5E5E5;
+  .subheader {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  &__recording {
+    font-size: 16px;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__steps {
+    margin-top: 100px;
+    width: 33%;
+    &_top {
+      position: relative;
+      min-height: 150px;
+    }
+    &_bottom {
+      padding-right: 135px;
+    }
+  }
+  &__qr-code {
+    width: 108px;
+    height: 108px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 15px;
+  }
+  &__download-ico {
+    position: absolute;
+    background: #ff941f;
+    padding: 5px 5px;
+    top: 75px;
+    left: -12px;
+  }
+  &__cross-ico {
+    position: absolute;
+    transform: scale(1.8);
+    background: #4B8EFF;
+    top: -15px;
+    left: 93px;
+    img {
+      transform: scale(0.8);
+    }
+  }
+  &__check-list {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+  }
+  &__check-ico {
+    background: #ff941f;
+    padding: 4px 7px;
+    &::before {
+      content: '\2713';
+      color: #fff;
+    }
+  }
+  &__location-ico {
+    position: absolute;
+    transform: scale(1.8);
+    background: #4B8EFF;
+    top: 85px;
+    left: 75px;
+    img {
+      transform: scale(0.7);
+    }
+  }
+  &__wallet-ico {
+    position: absolute;
+    background: #4B8EFF;
+    transform: scale(1.8);
+    top: -30px;
+    left: 95px;
+    img {
+      transform: scale(0.8);
+    }
+  }
+  &__check-price {
+    background: #202020;
+    color: #fff;
+    font-size: 27px;
+    line-height: 33px;
+    font-weight: 700;
+    position: absolute;
+    border-radius: 16.5px;
+    padding: 15px 40px;
+    transform: rotate(-5.41deg);
+  }
+  &__plus-ico {
+    background: #ff941f;
+    position: absolute;
+    padding: 0 6px;
+    top: 55px;
+    left: 20px;
+    z-index: 1;
+    &::before {
+      content: '\002B';
+      color: #fff;
+      font-size: 23px;
+    }
+  }
+  &__content_img {
+    display: flex;
+    margin-top: 20px;
+    img {
+      width: 50%;
+      height: 40px;
+      opacity: .1;
+      &:last-child {
+        transform: scale(1.1);
+      }
+    }
+  }
+  hr {
+    margin: 70px 0;
+  }
+  &__list {
+    display: flex;
+    color: #181818;
+    line-height: 24px;
+    &_left {
+      width: 50%;
+      margin-right: 132px;
+      li {
+        position: relative;
+        list-style: none;
+        margin-bottom: 25px;
+        &:before {
+          content: '\2022';
+          color: #4F8FFD;
+          font-size: 18px;
+          position: absolute;
+          left: -15px;
+        }
+      }
+    }
+    &_right {
+      width: 50%;
+      li {
+        position: relative;
+        list-style: none;
+        margin-bottom: 25px;
+        &:before {
+          content: '\2022';
+          color: #4F8FFD;
+          font-size: 18px;
+          position: absolute;
+          left: -15px;
+        }
+      }
+    }
+  }
+}
+.img-part {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.animate__animated.animate__backInRight {
+  --animate-duration: 2s;
+}
