@@ -1,0 +1,38 @@
+.recording {
+  background: #E5E5E5;
+  padding-bottom: 30px;
+  .container {
+    background: #4F8FFD url(/img/svg/record-form.png) no-repeat right;
+    border-radius: 30px;
+    min-height: 301px;
+    padding: 57px 60px;
+    position: relative;
+  }
+  .subheader {
+    color: #fff;
+    margin: 0;
+    padding-bottom: 64px;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__form {
+    input {
+      line-height: 3;
+      background: transparent;
+      border-style: none;
+      border-bottom-style: inset;
+      border-color: rgba(239, 239, 239, 0.28);
+      border-width: 1px;
+      width: 330px;
+      margin-right: 63px;
+    }
+    ::placeholder {
+      color: #fff;
+    }
+  }
+  &_btn {
+    background-color: #fff;
+    color: #4F8FFD;
+  }
+}
